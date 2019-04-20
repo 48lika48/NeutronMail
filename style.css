@@ -87,7 +87,7 @@ main {
 .entrance {
 	background-image: url(assets/mountains.png);
 	background-repeat: no-repeat;
-	height: 600px;
+	height: 616px;
 	display: flex;
 }
 .account {
@@ -132,6 +132,7 @@ main {
 }
 .security {
 	font-family: "TitilliumWeb-Regular", "MyriadPro-Regular";
+	height: 500px;
 }
 .colomns {
 	width: 100%;
@@ -157,8 +158,8 @@ main {
 }
 .hrswiss {
 	width: 0.0625rem; 
-	height: 13.5rem;
-	margin-top: -7%;
+	height: 14rem;
+	margin-top: -7.3%;
 }
 .double {
 	width: 20%;
@@ -195,7 +196,7 @@ figcaption {
 .physical p {
 	font-size: 1.6rem;
 	color: rgba(149, 147, 147, 255);
-	margin: 1.5% 0 1.5% 0;
+	margin: 1.5% 0 3% 0;
 }
 h3 {
 	font-size: 4rem;
@@ -207,31 +208,31 @@ h3 {
 	background: #fff;
 	font-size: 1.33rem;
 	color: rgba(103, 103, 103, 255);
-    padding: 1% 2%; 
+    padding: 1.5% 2%; 
 	border-style: solid;
 	border-color: #d6d6d6;
 	border-radius: 2.5rem; 
 	margin: -7% -21% 0 0;
 }
 .magazine {
-	width: 55%;
-	margin: 3% 0;
+	background-color: white;
+	margin-top: 1.5%;
 }
 .gray {
 	background: linear-gradient(to bottom, #eeeeee 0%, #efefef 30%, #f8f8f8 60%, #ffffff 100%);
 }
 .any {
-	background-image: url(assets/triangle.png);
-	background-repeat: no-repeat;
-	height: 550px;
-	 
+	height: 800px;
 }
 .anywhere {
+	background-image: url(assets/triangle.png);
+	background-repeat: no-repeat;
 	display: flex;
+	height: 359px;
 }
 .dots {
 	width: 2%;
-	margin: 0.5% 0 0 23%;
+	margin: 3% 0 0 23%;
 	float: left;
 }
 .quote {
@@ -239,39 +240,56 @@ h3 {
 	font-family: "MalagaOTCE-RegItalic", "MyriadPro-Regular";
 	font-size: 1.5rem;
 	color: rgba(16, 16, 16, 255);
+	margin-top: 3%;
+}
+.quote p {
+	margin-bottom: 3%;
 }
 .up {
 	font-family: "TitilliumWeb-Regular", "MyriadPro-Regular";
 	color: rgba(83, 83, 83, 255);
 	text-align: right;
-	margin-top: 30%;
-	margin-right: -8rem;
+	margin-top: 25%;
+	margin-right: -10rem;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 h4 {
-	font-size: 3rem;
+	font-size: 2.8rem;
 	color: rgba(83, 83, 83, 255);
 	font-weight: normal;
 }
 .up p{
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	color: rgba(149, 147, 147, 255);
 	margin: 2% 0 3% 0;
 }
 .device {
 	width: 50%;
+	height: 670px;
+	margin-top: 3%;
+	position: relative;
+	z-index: 1;
+}
+.hrright {
+	display: flex;
+}
+.null {
+	width: 25%; 
+}
+.hrdevice {
+	width: 75%; 
+	height: 0.0625rem;
 	position: relative;
 	z-index: 0;
+	margin-top: -1.5%;
 }
 .privacy {
 	font-family: "TitilliumWeb-Regular", "MyriadPro-Regular";
 	color: rgba(83, 83, 83, 255);
+	margin: 2% 0 3% 0;
 	text-align: center;
-	font-size: 3rem;
-}
-.privacy {
-	margin: 2% 0 5% 0;
+	font-size: 2rem;
 }
 .privacy button {
 	text-align: center;
@@ -285,10 +303,10 @@ h4 {
 	font-family: "TitilliumWeb-Bold", "MyriadPro-Regular";
     color: rgba(255, 255, 255, 255);
 	border-radius: 2rem; 
-	font-size: 2rem;
+	font-size: 1.5rem;
 	text-align: center;
-	margin: 3% 0 3% 1%;
-	padding: 1% 3%; 
+	margin: 2% 0 2% 1%;
+	padding: 1% 1% 0.5% 1%; 
 	border: none;	
 	color: #fff; 
 }
@@ -298,17 +316,31 @@ h4 {
 	font-family: "TitilliumWeb-Bold", "MyriadPro-Regular";
     color: rgba(255, 255, 255, 255);
 	border-radius: 2rem; 
-	font-size: 2rem;
+	font-size: 1.5rem;
 	text-align: center;
-	margin: 3% 0 3% 1%;
-	padding: 1% 3%; 
+	margin: 2% 0 2% 1%;
+	padding: 1% 1% 0.5% 1%;
 	border: none;	
 	color: #fff; 
 }
-.help {
-	width: 80%;
+.hrprivacy {
+	width: 85rem; 
+	height: 0.0625rem;
+}
+.help p {
+	width: 84rem;
 	font-size: 1rem;
 	color: rgba(122, 122, 122, 255);
+	text-align: right;
+	margin: 1% 0;
+}
+.hrhelp {
+	width: 0.0625rem; 
+	height: 1rem;
+	margin-left: 76%;
+}
+.secure {
+	width: 77.5%;
 	text-align: right;
 }
 footer {
@@ -318,9 +350,27 @@ footer {
 	padding: 1rem;
 	box-sizing: border-box;
 }
-.company .legal .nmail {
+.form {
+	display: flex;
 	font-family: "TitilliumWeb-Bold", "TitilliumWeb-Regular", "MyriadPro-Regular";
 	font-size: 1.5rem;
 	color: rgba(92, 92, 92, 255);
 	text-align: left;
+	width: 100%;
+}
+.visit {
+	width: 30%;
+}
+.company{
+	/*direction: rtl;*/
+	width: 20%;
+
+}
+.legal {
+	/*direction: rtl;*/
+	width: 20%;
+}
+.nmail {
+	/*direction: rtl;*/
+	width: 20%;
 }
